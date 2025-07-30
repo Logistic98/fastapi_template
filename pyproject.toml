@@ -1,0 +1,20 @@
+[project]
+name = "fastapi_template"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi",
+  "uvicorn",
+  "pyyaml",
+  "httpx",
+  "aiofiles",
+  "openai"
+]
+
+[tool.uv]
+index-strategy = "first-index"
+
+[[tool.uv.index]]
+name = "tencent"
+url = "https://mirrors.cloud.tencent.com/pypi/simple"
+default = true
